@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: "Open Sans", sans-serif;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: url(../images/bg.jpg);
+    background-size: 100% 100%;
+}
+.navbar{
+    width: 90%;
+    height: 10%;
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-family: "Goldman", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 5vh;
+}
+.logo span{
+    color: #66fef1;
+    font-size: 5vh;
+}
+.navElement{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+.navElement a{
+    text-decoration: none;
+    color: #66fef1;
+    font-size: 1.8vh;
+    font-weight: 600;
+    padding-bottom: 2px;
+}
+
+.herosection{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 15px;
+}
+.heroContent h1{
+    font-size: 5vw;
+}
+.heroContent h5{
+    font-size: 2.5vw;
+}
+.heroContent h5 span{
+    color: #66fef1;
+}
+.btns{
+    display: flex;
+    gap: 2vw;
+    padding-top: 5%;
+}
+.btn1{
+    height: 5vh;
+    background-color: #66fef1;
+    color: rgb(20, 20, 20);
+    border: none;
+    width: 10vw;
+    font-size: 2vh;
+}
+.btn2{
+    height: 5vh;
+    background-color: black;
+    border: 2px solid #66fef1;
+    color: #66fef1;
+    width: 10vw;
+    font-size: 2vh;
+}
+.social{
+    gap: 2vw;
+    font-size: 3vh;
+    display: flex;
+    padding-top: 5%;
+}
+.social a{
+    text-decoration: none;
+}
+.social i{
+    width: 5vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #66fef1;
+    padding: 10px;
+    color: #66fef1;
+    border-radius: 50%;
+}
+
+/* --------------------------------------------------About Me-------------------------------------------------- */
+.aboutMe{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #163143;
+    align-items: center;
+    flex-direction: column;
+}
+.abhead{
+    height: 20%;
+    width: 90%;
+}
+.abhead h2{
+    color: #66fef1;
+    text-align: center;
+    padding-top: 5vh;
+    font-size: 5vh;
+    font-weight: 800;
+}
+.aboutText .text p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2vh;
+}
+.aboutText .text span{
+    color: #66fef1;
+    font-size: 2.2vh;
+    font-weight: 500;
+}
+.aboutContent{
+    width: 90%;
+    height: 70%;
+    padding: 0 10vh 0 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.img{
+    width: 40%;
+    height: 80%;
+}
+.aboutText{
+    width: 40%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.aboutText p,button{
+    color: #202020;
+}
+.aboutText button{
+    color: #202020;
+    height: 4vh;
+    background-color: #66fef1;
+    color: rgb(20, 20, 20);
+    border: none;
+    width: 8vw;
+    font-size: 1.7vh;
+}
+
+/* --------------------------------------------------Service-------------------------------------------------- */
+.service{
+    width: 100%;
+    height: 100vh;
+    background-color: #163143;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.servHead h1{
+    text-align: center;
+    color: #66fef1;
+    font-size: 5vh;
+    font-weight: 700;
+}
+.servHead p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2vh;
+    width: 60%;
+}
+.servCont{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    padding: 3% 3% 0 3%;
+}
+.card{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding: 2%;
+    background: #00000051;
+    border-radius: 20px;
+}
+.card:hover{
+    animation: flips 1s ease-in-out 1 forwards;
+}
+@keyframes flips {
+    0%{
+        transform: rotateY(0deg) ;
+    }
+    25%{
+        transform: rotateY(90deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    75%{
+        transform: rotateY(270deg);
+    }
+    100%{
+        transform: rotateY(360deg) scale(1.1);
+    }
+}
+.cardTop{
+    display: flex;
+    gap: 8%;
+    align-items: center;
+}
+.cardTop img{
+    height: 70px;
+}
+.cardTop h3{
+    font-size: 3.5vh;
+    color: #66fef1;
+}
+.cardBottom{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cardBottom p{
+    font-size: 1.7vh;
+    font-weight: 400;
+}
+.cardBottom .cardBtn{
+    width: 100%;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+}
+.cardBottom button{
+    width: 50%;
+    font-size: 1.7vh;
+    font-weight: 600;
+    border: none;
+    padding: 2%;
+    background-color: #66fef1;
+    color: #000000;
+
+}
+
+
+/* --------------------------------------------------Skills-------------------------------------------------- */
+.skill{
+    width: 100vw;
+    height: 100vh;
+    background-color: #163143;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillHead{
+    width: 90%;
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillHead h1{
+    color: #ffffff;
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 800;
+    margin-top: 20px;
+}
+.skillHead p{
+    color: #ffffff;
+    text-align: center;
+    width: 70%;
+    margin-top: 1%;
+}
+.skillBody{
+    width: 90%;
+    height: 80%;
+    display: flex;
+}
+.bar{
+    display: flex;
+    flex-wrap:wrap;
+    gap: 10px;
+    align-items: center;
+}
+.bar i{
+    color: #ffffff;
+    font-size: 4vh;
+}
+.bar .bxl-html5{
+    color: #f06529;
+}
+.bar .bxl-css3{
+    color: #0066cc;
+}
+.bar .bxl-javascript{
+    color: #f0db4f;
+}
+.bar .bxl-figma{
+    color: #ff8577;
+}
+.bar .bxl-c-plus-plus{
+    color: cyan;
+}
+.bar .bx-candles{
+    color: #58dd68;
+}
+
+.techSkills{
+    width: 50%;
+    height: 70%;
+    padding: 2% 5% 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.skillBody h3{
+    color: #66fef1;
+    font-size: 3vh;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 3px;
+}
+.techSkills .bar .indfo span{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+}
+.techSkills .bar .progress-line{
+    position: relative;
+    border-radius: 100px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.techSkills .bar .progress-line span{
+    height: 100%;
+    background-color: #66fef1;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+}
+.progress-line.css span{
+    width: 80%;
+}
+.progress-line.js span{
+    width: 60%;
+}
+.progress-line.figma span{
+    width: 85%;
+}
+.progress-line.c span{
+    width: 50%;
+}
+.progress-line.trade span{
+    width: 55%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 0px;
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after{
+    content: "90%";
+}
+.progress-line.css span::after{
+    content: "80%";
+}
+.progress-line.js span::after{
+    content: "60%";
+}
+.progress-line.figma span::after{
+    content: "85%";
+}
+.progress-line.c span::after{
+    content: "50%";
+}
+.progress-line.trade span::after{
+    content: "55%";
+}
+.progress-line span::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 2px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #202020;
+    top: -10;
+    right: 0;
+    animation: showText 0.5s linear forwards;
+    opacity: 0;
+}
+@keyframes animate {
+    100%{
+        transform: scaleX(1);
+    }
+}
+@keyframes showText {
+    100%{
+        opacity: 1;
+    }
+}
+
+
+.proSkills{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5% 0 5%;
+}
+.radial-bars{
+    width: 100%;
+    margin-left: 25%;
+    margin-top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top:50%;
+    bottom: 50%;
+    transform: translate(-50%,-50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-linecap: round;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100%{
+        stroke-dashoffset: -1;
+    }
+}
+.path{
+    stroke-width: 10;
+    stroke: #66fef1;
+    fill: transparent;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 500;
+    stroke-linecap: round;
+}
+.path-1{animation: animate-path1 1s 1s linear forwards;}
+.path-2{animation: animate-path2 1s 1s linear forwards;}
+.path-3{animation: animate-path3 1s 1s linear forwards;}
+.path-4{animation: animate-path4 1s 1s linear forwards;}
+
+/* Totla size is 500 to get the desiered percent make 500-persent desiered */
+@keyframes animate-path1 {
+    100%{
+        stroke-dashoffset: 50;/*10%*/
+    }
+}
+@keyframes animate-path2 {
+    100%{
+        stroke-dashoffset: 150;/*30%*/
+    }
+}
+@keyframes animate-path3 {
+    100%{
+        stroke-dashoffset: 100;/*20%*/
+    }
+}
+@keyframes animate-path4 {
+    100%{
+        stroke-dashoffset: 75;/*40%*/
+    }
+}
+
+.radial-bar .percent{
+    position: absolute;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+
+/* --------------------------------------------------Project-------------------------------------------------- */
+.project{
+    min-height: 90vh;
+}
+.certCards{
+    min-width: 100vw;
+    min-height: 80vh;
+    background: #0066cc;
+}
+.certCard{
+
+}
+
+
+/* --------------------------------------------------Certification-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------Contact Me-------------------------------------------------- */
+
+
+
+/* --------------------------------------------------Footer-------------------------------------------------- */
+
+
