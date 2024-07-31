@@ -1,0 +1,61 @@
+@media screen and (max-width: 1024px) {
+    /* body{
+        background: white;
+    } */
+    .about h2,.skills h2,.projects h2,.certificates h2,.contactMe h2{
+        font-size: 2em;
+        margin-bottom: 28px;
+    }
+    .about > p{
+        font-size: 16px;
+    }
+    .text{
+        font-size: 20px;
+    }
+    .aboutCont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .aboutItems{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+    }
+    .skillName i {
+        font-size: 40px;
+    }
+    .head{
+        font-size: 28px;
+        margin-bottom: 4%;
+    }
+    .certImg, .certImg img{
+        display: none;
+    }
+    .certificate{
+        border-radius: 10px;
+    }
+    form{
+        width: 90%;
+    }
+    .techSkills,.softSkills{
+        gap: 20px;
+    }
+    .aboutCont img{
+        min-width: 50%;
+    }
+    
+}
+
+
+@media only screen and (max-width: 640px){
+    .skillItem{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .aboutCont img{
+        width: 90%;
+    }
+}
