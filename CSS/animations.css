@@ -1,0 +1,85 @@
+.about,.left{
+    animation: come-left 2s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+@keyframes come-left {
+    0%{
+        transform: translate(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.right{
+    animation: come-right 5s ease-in-out forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes come-right {
+    0%{
+        transform: translate(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(25%);
+        opacity: 1;
+    }
+}
+
+
+
+h1{
+    animation: moves 2s ease-in 1;
+}
+@keyframes moves {
+    0% {
+        opacity: 0;
+        font-size: 0px;
+    }
+
+    100% {
+        opacity: 1;
+        font-size: 8vw;
+    }
+}
+
+.about p span{
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan;
+    }
+
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan, 0 0 80px cyan;
+    }
+}
+
+.proBar {
+    animation: fills 2s ease-in-out forwards 1;
+}
+
+@keyframes fills {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--width);
+    }
+}
+
+
+.hide{
+    opacity: 0;
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+}

@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shreyas K U | Web Devloper</title>
     <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../CSS/animations.css">
     <!-- <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.2/build/spline-viewer.js"></script> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="../CSS/responcive.css">
 </head>
 
 <body>
-    <div class="hero">
+    <div class="mask"></div>
+    <div class="hero" id="hero">
         <!-- <spline-viewer url="https://prod.spline.design/hjWYiW3d74H3mk7D/scene.splinecode"></spline-viewer> -->
         <div class="name">
             <h1 data-content="SHREYAS K U">SHREYAS K U</h1>
@@ -27,6 +29,18 @@
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#contactMe">Contact ME</a></li>
             </ul>
+            <div class="ham">
+                <i class="fas fa-bars"></i>
+            </div>
+
+                <ul class="resul">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contactMe">Contact ME</a></li>
+                </ul>
         </nav>
     </div>
 
@@ -113,6 +127,15 @@
                     <div class="skillName">
                         <i class="fa-brands fa-uikit"></i>
                         <h3>UI UX</h3>
+                    </div>
+                    <div class="bar">
+                        <div class="proBar" style=" --width:85%; "></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <div class="skillName">
+                        <i class="fa-solid fa-circle-c"></i>
+                        <h3>C and C++</h3>
                     </div>
                     <div class="bar">
                         <div class="proBar" style=" --width:85%; "></div>
@@ -215,6 +238,18 @@
                 </div>
                 <button>View Code</button>
             </div>
+
+            <div class="card">
+                <div class="img"><img src="../images/todo.png" alt=""></div>
+                <div class="content">
+                    <div class="proHead">To-DO App</div>
+                    <div class="proDis">Our user-friendly weather app will help you stay on top of the weather. Receive
+                        real-time updates, accurate forecasts, and severe weather alerts right at your fingertips.
+                        Whether you're planning your day or preparing for a trip, our app keeps you up to date on the
+                        latest weather conditions.</div>
+                </div>
+                <button>View Code</button>
+            </div>
         </div>
     </div>
 
@@ -222,7 +257,7 @@
     <div class="certificates" id="certificates">
         <h2>Certificates</h2>
         <div class="certi">
-            <div class="certificate">
+            <div class="certificate left">
                 <div class="certImg"><img src="../images/1.jpg" alt=""></div>
                 <div class="certDetails">
                     <div class="certText">
@@ -233,6 +268,7 @@
                     </div>
                     <div class="certTime">NOV 17 2023</div>
                     <button>View Certificate</button>
+                    
                 </div>
             </div>
 
@@ -250,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="certificate">
+            <div class="certificate left">
                 <div class="certImg"><img src="../images/3.jpg" alt=""></div>
                 <div class="certDetails">
                     <div class="certText">
@@ -265,10 +301,24 @@
             </div>
 
             <div class="certificate right">
-                <div class="certImg"><img src="../images/4.jpg" alt=""></div>
+                <div class="certImg"><img src="../Certificates/C Programming.jpg" alt=""></div>
                 <div class="certDetails">
                     <div class="certText">
                         <div class="certHead">Udemy - Figma UI UX Essentials</div>
+                        <div class="certDetails">Learn the fundamentals of user experience design with Google's
+                            Foundations of UX Design course. This thorough program teaches the fundamentals of UX, such
+                            as user-centered design, research methodology, wireframing, and prototyping.</div>
+                    </div>
+                    <div class="certTime">NOV 17 2023</div>
+                    <button>View Certificate</button>
+                </div>
+            </div>
+
+            <div class="certificate left">
+                <div class="certImg"><img src="../Certificates/C Programming.jpg" alt=""></div>
+                <div class="certDetails">
+                    <div class="certText">
+                        <div class="certHead">C Programming and C++</div>
                         <div class="certDetails">Learn the fundamentals of user experience design with Google's
                             Foundations of UX Design course. This thorough program teaches the fundamentals of UX, such
                             as user-centered design, research methodology, wireframing, and prototyping.</div>
@@ -295,6 +345,8 @@
         </div>
     </div>
 
+
+    <script src="../JS/script.js"></script>
 </body>
 
 </html>

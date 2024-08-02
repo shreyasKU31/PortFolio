@@ -17,7 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    /* overflow: hidden; */
+}
+
+.mask{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    mask-image: linear-gradient(to bottom, transparent, #000000 10% 80%, transparent);
 }
 
 .hero {
@@ -34,6 +41,7 @@ spline-viewer {
     align-items: center;
     justify-content: center;
     z-index: 100;
+    position: absolute;
 }
 
 .name {
@@ -51,21 +59,13 @@ h1 {
     color: rgb(255, 255, 255);
     font-family: "Konexy";
     z-index: 10;
-    animation: moves 2s ease-in 1;
     position: relative;
 }
 
-@keyframes moves {
-    0% {
-        opacity: 0;
-        font-size: 0px;
-    }
 
-    100% {
-        opacity: 1;
-        font-size: 8vw;
-    }
-}
+
+
+
 
 
 /* -------------------- NavBar Design -------------------- */
@@ -85,7 +85,19 @@ span {
     z-index: 1000;
     border-radius: 500px;
     border: 2px solid cyan;
-    animation: nav-move 5s ease-in-out linear infinite;
+}
+
+.ham{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    display: none;
+}
+.resul{
+    display: none;
 }
 
 ul {
@@ -115,6 +127,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .about h2,
@@ -138,18 +151,9 @@ a {
 .about p span {
     font-size: 1.4em;
     font-weight: bold;
-    animation: glow 1s ease-in-out infinite alternate;
+    
 }
 
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan;
-    }
-
-    to {
-        text-shadow: 0 0 20px #fff, 0 0 30px cyan, 0 0 40px cyan, 0 0 50px cyan, 0 0 60px cyan, 0 0 70px cyan, 0 0 80px cyan;
-    }
-}
 
 .aboutCont {
     display: flex;
@@ -352,7 +356,6 @@ a {
     background-color: cyan;
     border: none;
     border-radius: 20px;
-    font-weight: bold;
     cursor: pointer;
 }
 
@@ -480,8 +483,7 @@ textarea {
     padding: 0px 5%;
     padding-bottom: 8px;
 }
-
-
 ::-webkit-scrollbar {
     display: none;
 }
+

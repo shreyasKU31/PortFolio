@@ -46,7 +46,46 @@
     .aboutCont img{
         min-width: 50%;
     }
-    
+    ul{
+        display: none;
+    }
+    .ham{
+    display: block;
+    }
+    .resul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        width: 100%;
+        background-color: #181818;
+        border-radius: 20px;
+        gap: 4px;
+        transform:scale(0);
+        transition: 0.5s ease-in-out;
+    }
+    .fas, .fa-solid{
+        cursor: pointer;
+    }
+    .resul li{
+        width: 100%;
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .resul a{
+        width: 100%;
+        padding: 8px 0;
+        text-align: center;
+        border-radius: 4px;
+    }
+    .resul a:hover,.resul a:focus{
+        background-color: cyan;
+        color: rgb(0, 0, 0);
+    }
 }
 
 
