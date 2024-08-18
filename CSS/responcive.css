@@ -1,7 +1,9 @@
 @media screen and (max-width: 1024px) {
-    /* body{
-        background: white;
-    } */
+    .navbar{
+        -webkit-box-shadow: -1px 31px 120px 4px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 31px 120px 4px rgba(0,0,0,0.75);
+        box-shadow: -1px 31px 120px 4px rgba(0,0,0,0.75);
+    }
     .about h2,.skills h2,.projects h2,.certificates h2,.contactMe h2{
         font-size: 2em;
         margin-bottom: 28px;
